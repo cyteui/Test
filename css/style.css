@@ -1,0 +1,185 @@
+* {
+    font-size: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-weight: 400;
+}
+
+.Contenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    background-color: #0E1923;
+    color: white;
+}
+
+.table {
+    margin-top: 40vh;
+    transform: translateY(-40%);
+    text-align: center;
+}
+
+.logo {
+    width: 12%;
+    padding-bottom: 2.5em;
+}
+
+
+h1 {
+    font-size: 3.5em;
+    line-height: 1;
+    color: white;
+    padding-bottom: 0.2em;
+}
+
+.description {
+    margin: 20px auto;
+    max-width: 500px;
+    font-size: 1.05em;
+    line-height: 1.5;
+    color: white;
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.bouton-notif {
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 10px;
+    transition-duration: 0.4s;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #2BAD6E;
+}
+
+.bouton-notif:hover {
+    background-color: #2BAD6E;
+}
+
+.réseaux-sociaux{
+    position: absolute;
+    text-decoration: none;
+    line-height: 1;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 1em;
+}
+
+.réseaux{
+    text-decoration: none;
+}
+
+.rs{
+    height: 28px;
+    width: auto;
+    margin: 10px;
+    margin-right: 15px;
+}
+
+.rs2{
+    height: 28px;
+    width: auto;
+    margin: 10px;
+    margin-right: 40px;
+}
+
+.rs:hover {
+    transition: transform .3s;
+    transform: translateY(-0.3rem);
+}
+
+.rs2:hover {
+    transition: transform .3s;
+    transform: translateY(-0.3rem);
+}
+
+
+
+
+@media screen and (max-width: 900px){
+
+    .contenu {
+    display: flex;
+    justify-content: center;
+    }
+
+    .table {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .réseaux-sociaux{
+        position: relative;
+        text-align: center;
+    }
+
+    .réseaux{
+        text-align: center;
+    }
+
+    .rs{
+        height: 32px;
+        padding: 8px;
+    }
+
+    .rs2{
+        height: 32px;
+        margin-right: 0px;
+        padding: 8px;
+    }
+
+    .titre{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .description {
+        width: 80%;
+    }
+
+    img {
+        width: 25%;
+        padding-bottom: 1em;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    img {
+        width: 35%;
+        padding-bottom: 1em;
+    }
+
+    .logo {
+        width: 35%;
+    }
+}
